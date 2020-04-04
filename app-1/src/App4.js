@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-
+import Login from './Login'
 
 class App extends Component {
   constructor() {
@@ -31,13 +31,7 @@ class App extends Component {
     // html 👇
     return (
       <div className="App">
-        <input
-          className='inputBox'
-          type='text'
-          onChange={e => this.handleOnChange(e)}
-        />
-
-        <p className='displayText'>{displayText}</p>
+        <Login />
       </div>
     );
   }
